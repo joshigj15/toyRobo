@@ -1,0 +1,21 @@
+<div class="ion-padding">
+  <ion-item>
+    <ion-label position="stacked">Move Horizontal </ion-label>
+    <ion-input type="number" [(ngModel)]="currentPosition.xpos"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="stacked">Move Vertical</ion-label>
+    <ion-input type="number" [(ngModel)]="currentPosition.ypos"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Facing</ion-label>
+    <ion-select [(ngModel)]="currentPosition.facing">
+      <ion-select-option *ngFor="let direction of directionArray" [value]="direction.key">{{direction.value}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+  <div class="ion-text-end">
+    <ion-button size="small" (click)="validMove()">
+      Place robot
+    </ion-button>
+  </div>
+</div>
