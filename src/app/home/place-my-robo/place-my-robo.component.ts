@@ -4,8 +4,7 @@ import { ToastService } from '../toast-msg.service';
 
 @Component({
   selector: 'app-place-my-robo',
-  templateUrl: './place-my-robo.component.html',
-  styleUrls: ['./place-my-robo.component.scss'],
+  templateUrl: './place-my-robo.component.html'
 })
 export class PlaceMyRoboComponent implements OnInit {
   @Input() maximumWidth:number;

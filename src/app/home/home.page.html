@@ -1,33 +1,33 @@
 <ion-content [fullscreen]="true" class="ion-padding">
-    <h3>
-      Curve Table
-    </h3>
-    <p>
-      Dimension Assumed ({{tableWidth}} * {{tableHeight}})
-    </p>
-    <p>
-      Toy is assumed as point object (very smaller than table) so its width and height are not considered
-    </p>
-    <p>
-      Click robot to know position
-    </p>
-    <!-- My Table -->
-    <div class="table">
-      <ion-icon id="myRobot" name="airplane-outline" (click)="shoutCurrentStatus()" class="default-robotClass"></ion-icon>
-    </div>
+  <h3>
+    Curve Table
+  </h3>
+  <p>
+    Dimension Assumed ({{tableWidth}} * {{tableHeight}})
+  </p>
+  <p>
+    Toy is assumed as point object (very smaller than table) so its width and height are not considered
+  </p>
+  <p>
+    Click robot to know position
+  </p>
+  <!-- My Table -->
+  <div class="table">
+    <ion-icon id="myRobot" name="airplane-outline" (click)="shoutCurrentStatus()" class="default-robotClass"></ion-icon>
+  </div>
 
-    <div class="ion-margin-top">
-      <ion-button (click)="placeMyRobot()">
-        Place
-      </ion-button>
-      <ion-button (click)="moveToy()">
-        Move
-      </ion-button>
-      <ion-button (click)="rotateLeft()">
-        Left
-      </ion-button>
-      <ion-button (click)="rotateRight()">
-        Right
-      </ion-button>
-    </div>
+  <div class="ion-margin-top">
+    <ion-button (click)="placeMyRobot()">
+      Place
+    </ion-button>
+    <ion-button (click)="moveToy()">
+      Move
+    </ion-button>
+    <ion-button (click)="rotateLeft()">
+      Left
+    </ion-button>
+    <ion-button (click)="rotateRight()">
+      Right
+    </ion-button>
+  </div>
 </ion-content>
