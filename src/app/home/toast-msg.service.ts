@@ -14,7 +14,7 @@ export class ToastService {
     /**
      * Method for rendering toast messages
      */
-    async showError(messageText: string) {
+    async showError(messageText:string) {
         let notification = await this.toastController.create({
             message: messageText,
             duration: 2000,

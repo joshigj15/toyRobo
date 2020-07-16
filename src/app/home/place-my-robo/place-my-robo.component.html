@@ -10,12 +10,11 @@
   <ion-item>
     <ion-label>Facing</ion-label>
     <ion-select [(ngModel)]="currentPosition.facing">
-      <ion-select-option *ngFor="let direction of directionArray" [value]="direction.key">{{direction.value}}
-      </ion-select-option>
+      <ion-select-option *ngFor="let direction of directionArray" [value]="direction.key">{{direction.value}}</ion-select-option>
     </ion-select>
   </ion-item>
   <div class="ion-text-end">
-    <ion-button size="small" (click)="validMove()">
+    <ion-button size="small" (click)="validMove()" id="checkAndClose">
       Place robot
     </ion-button>
   </div>

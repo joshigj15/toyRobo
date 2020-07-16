@@ -15,7 +15,7 @@ import { PlaceMyRoboComponent } from './place-my-robo/place-my-robo.component';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage, PlaceMyRoboComponent],
+  declarations: [HomePage,PlaceMyRoboComponent],
   entryComponents: [PlaceMyRoboComponent]
 })
-export class HomePageModule { }
+export class HomePageModule {}
